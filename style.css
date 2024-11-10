@@ -1,0 +1,97 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.pdf-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top:50px;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+
+.pdf-item {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    color: #755ad5f2;;
+}
+
+.pdf-item a {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+.pdf-item a:hover {
+    background-color: #4b5d71;
+}
+
+@media (max-width: 768px) {
+    .pdf-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .pdf-item {
+        width: 100%;
+    }
+}
